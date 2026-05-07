@@ -1,13 +1,26 @@
 import { useState } from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Bookmarks from './pages/Bookmarks';
 
+
+function App() {
   return (
-    <>
-    <h1 className='text-fuchsia-700'>Hey this is the frontend</h1>
-    </>
-  )
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/bookmarks" element={<Bookmarks />} />
+
+
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
