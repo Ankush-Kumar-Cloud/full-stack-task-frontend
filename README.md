@@ -96,12 +96,13 @@ frontend/
 │
 ├── package.json
 └── vite.config.js
+
 ⚙️ Installation & Setup
 1️⃣ Clone Repositories
 Backend
-git clone <your-backend-repo-url>
+git clone https://full-stack-task-backend.onrender.com
 Frontend
-git clone <your-frontend-repo-url>
+git clone https://full-stack-task-frontend.vercel.app/
 🔧 Backend Setup
 Install Dependencies
 npm install
@@ -113,8 +114,8 @@ Start Backend Server
 npm run dev
 
 Backend runs on:
-
 http://localhost:5000
+
 💻 Frontend Setup
 Install Dependencies
 npm install
@@ -133,6 +134,7 @@ npm run dev
 Frontend runs on:
 
 http://localhost:5173
+
 🚀 Deployment
 Frontend Deployment
 Vercel
